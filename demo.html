@@ -53,9 +53,9 @@
             <h5 class="font-bold block mb-5">Example heading 2</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequuntur cumque deserunt doloribus eos esse ipsam ipsum nam neque nisi odio officiis, pariatur sit tenetur voluptatum. Deserunt facilis quos tempora?</p>
         </div><!-- end card -->
-        <div class="card rounded bg-slate-100 p-12 my-6 border" id="card9" data-tg-tour="Step 3" data-tg-title="Example heading 3">
+        <div class="card rounded bg-slate-100 p-12 my-6 border" id="card9" data-tg-tour="Step 3" data-tg-title="Example heading 3" data-tg-propagate-events="true">
             <h5 class="font-bold block mb-5">Example heading 3</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequuntur cumque deserunt doloribus eos esse ipsam ipsum nam neque nisi odio officiis, pariatur sit tenetur voluptatum. Deserunt facilis quos tempora?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequuntur cumque deserunt doloribus eos esse ipsam ipsum nam neque nisi odio officiis, pariatur sit tenetur voluptatum. Deserunt facilis quos tempora? <button onclick="alert('test')">Test button</button> </p>
         </div><!-- end card -->
     </div><!-- end grid -->
 
@@ -121,6 +121,7 @@
         group: "groupA",
         completeOnFinish: true,
         allowDialogOverlap: true,
+        propagateEvents: true,
     })
 
     // const triggerBtn = document.getElementById('tourTrigger')
